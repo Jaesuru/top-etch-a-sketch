@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#divContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 2px;
+}
+
+#divContainer div {
+    flex: 0 0 calc((100) / 16);
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+
+#divContainer div.hover {
+    background-color: rgb(82, 82, 82);
+}
