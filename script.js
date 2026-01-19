@@ -15,7 +15,11 @@ function createGrid (size) {
         newDiv.style.backgroundColor = `white`;
 
         newDiv.addEventListener("mouseenter", () => {
-            newDiv.style.backgroundColor = "rgb(82, 82, 82)";
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            
+            newDiv.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         });
 
         divContainer.appendChild(newDiv);
